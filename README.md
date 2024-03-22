@@ -11,7 +11,7 @@ mv main cosmos-exporter
 
 # We upload the new version here
 ```
-cosmos-exporter
+cosmos-exporter.zip
 ```
 
 # cosmos-exporter
