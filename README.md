@@ -1,3 +1,19 @@
+# Rebuild 
+Fix overflow when delegator tokens too large for /metrics/validators endpoint
+Add denom exponent to allow for easier custom denom definition
+Add documentation for denom exponent and coefficient to avoid confusion
+```
+go build
+output file: main
+chmod +x main
+mv main cosmos-exporter
+```
+
+# We upload the new version here
+```
+cosmos-exporter
+```
+
 # cosmos-exporter
 
 ![Latest release](https://img.shields.io/github/v/release/solarlabsteam/cosmos-exporter)
