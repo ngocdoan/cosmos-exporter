@@ -16,11 +16,9 @@ echo '================================================='
 sleep 3
 
 echo -e "\e[1m\e[32m1. Installing cosmos-exporter... \e[0m" && sleep 1
-# build cosmos-exporter
-git clone https://github.com/a41-official/cosmos-exporter.git && cd cosmos-exporter
-go mod tidy
-go build -o cosmos-exporter
-mv ./cosmos-exporter /usr/bin
+wget -O cosmos-exporter https://github.com/ngocdoan/cosmos-exporter/releases/download/0.3.1/cosmos-exporter
+chmod +x cosmos-exporter
+mv cosmos-exporter /usr/local/bin
 
 sudo useradd -rs /bin/false cosmos_exporter
 
